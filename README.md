@@ -20,13 +20,8 @@
 &nbsp;
 &nbsp;
 
-![Cover (2)](./public/preview-desk.png)
+![Cover (2)](./public/preview.png)
 
-<div align="center">
-
-![Cover (2)](./public/preview-mobile.png)
-
-</div>
 
 &nbsp;
 
@@ -40,6 +35,8 @@ O projeto **upload.ai** é uma plataforma que recebe um arquivo de vídeo e gera
 - [Typescript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [React.js](https://reactjs.org/)
+- [shadc/ui](https://ui.shadcn.com)
+- [Lucide Icons](https://lucide.dev)
 
 ## 🌿 Branches
 
@@ -64,11 +61,12 @@ O projeto está estruturado da seguinte forma:
     - ⚛️ `main.tsx`
     - ⚛️ `index.css`
   - 📁 `components`
+    - 📁 `ui`
+  - 📁 `lib`
 
 ## 🛠️ Instruções de execução
 
 Siga as instruções abaixo para rodar o projeto em seu ambiente local:
-
 
 
 1. Certifique-se de ter o Node.js instalado em seu computador. Você pode baixar a versão mais recente do Node.js em https://nodejs.org.
