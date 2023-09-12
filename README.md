@@ -80,6 +80,10 @@ Siga as instruções abaixo para rodar o projeto em seu ambiente local:
 4. Instale as dependências do projeto executando o seguinte comando:
 
 ```bash
+  pnpm install
+
+  ou
+
   npm install
 ```
 
