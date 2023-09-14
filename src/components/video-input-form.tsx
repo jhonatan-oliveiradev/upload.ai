@@ -13,12 +13,16 @@ type Status = "waiting" | "converting" | "uploading" | "generating" | "success";
 
 const statusMessages = {
 	converting: "Convertendo...",
-	uploading: "Enviando...",
 	generating: "Transcrevendo...",
+	uploading: "Carregando...",
 	success: "Sucesso!"
 };
 
-export function VideoInputForm() {
+interface VideoInputFormProps {
+	onVideoUploaded: (id: string) => void;
+}
+
+export function VideoInputForm(props: VideoInputFormProps) {
 	const [videoFile, setVideoFile] = useState<File | null>(null);
 	const [status, setStatus] = useState<Status>("waiting");
 
@@ -84,8 +88,7 @@ export function VideoInputForm() {
 			return;
 		}
 
-		// convert video to audio
-
+		// converter o video em áudio
 		setStatus("converting");
 
 		const audioFile = await convertVideoToAudio(videoFile);
@@ -108,7 +111,7 @@ export function VideoInputForm() {
 
 		setStatus("success");
 
-		// props.onVideoUploaded(videoId);
+		props.onVideoUploaded(videoId);
 	}
 
 	const previewURL = useMemo(() => {
