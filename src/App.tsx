@@ -52,8 +52,14 @@ export function App() {
 						Desenvolvido com 💜 no NLW da Rocketseat.
 					</span>
 					<Button variant="outline">
-						<Github className="h-4 w-4 mr-2" />
-						Github
+						<a
+							className="flex items-center justify-center"
+							href="https://github.com/jhonatan-oliveiradev/upload.ai"
+							target="_blank"
+						>
+							<Github className="h-4 w-4 mr-2" />
+							Github
+						</a>
 					</Button>
 
 					<Separator orientation="vertical" className="h-6" />
